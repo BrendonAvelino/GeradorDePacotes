@@ -1,0 +1,90 @@
+/* Reset básico para garantir uma aparência consistente entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contêiner principal */
+#geral {
+    display: block;
+    position: relative;
+    padding: 20px;
+    width: 300px;
+    background-color: #00aaff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Estilo do título */
+.title_gerarPacotes {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Estilo do subtítulo */
+.subtitle_gerarPacotes {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* Estilo do botão */
+.buttonGerar {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonGerar:hover {
+    background-color: #005f99;
+}
+
+/* Estilo da lista de pacotes */
+#pacotes {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#pacotes li {
+    background-color: #fff;
+    color: #333;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adiciona uma animação de entrada para os pacotes gerados */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#pacotes li {
+    animation: slideIn 0.3s ease-out;
+}
